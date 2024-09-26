@@ -1,0 +1,63 @@
+.menu {
+  position: absolute; /* Залишаємо absolute для фіксованого позиціонування */
+  top: 0; /* Встановлює верхнє положення на 0 */
+  right: 0; /* Встановлює праве положення на 0 */
+  width: 200px;
+}
+.menu-icon {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #4984c4;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border-radius: 12px; /* Закруглені кути */
+}
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 100%; /* Відстань до верхньої частини меню */
+  right: 0; /* Встановлює праве положення на 0 */
+  width: 200px;
+  background-color: #4984c4; /*колір висувного меню*/
+  border-radius: 12px; /* Закруглені кути */
+}
+
+.menu-list li {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #5330f1;
+}
+
+.menu-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-list li:hover {
+  background-color: #555;
+}
+
+/* Плавне виїжджання меню */
+.menu-list {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease-out;
+}
+
+.menu:hover .menu-list {
+  max-height: 300px; /* максимальна висота, яку може займати меню */
+}
+@font-face {
+  font-family: 'Titus_Cyrillic';  /* Назва шрифту */
+  src: url('Titus_Cyrillic.ttf') format('truetype');  /* Шлях до шрифту */
+}
+body {
+  font-family: 'Titus_Cyrillic', serif, sans-serif;  /* Використання шрифту Titus Cyrillic для всього документа */
+  margin: 0; /* Збираємо всі відступи */
+  padding: 0; /* Збираємо всі відступи */
+}

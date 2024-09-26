@@ -1,0 +1,51 @@
+body {
+    background-image: url('Fon/fon.jpg'); /* Укажите путь к изображению */
+    background-size: cover; /* Заполнить весь экран */
+    background-position: center;
+            margin: 0;
+            height: 100vh; /* Высота на весь экран */
+      
+}
+        @font-face {
+            font-family: 'Space Age';  /* Назва шрифту */
+            src: url('font/space_age.ttf') format('truetype');  /* Шлях до шрифту */
+        }
+        @font-face {
+            font-family: 'Titus_Cyrillic';  /* Назва шрифту */
+            src: url('Titus_Cyrillic.ttf') format('truetype');  /* Шлях до шрифту */
+        }
+        body {
+            font-family: 'Titus_Cyrillic', serif, sans-serif;  /* Використання шрифту Titus Cyrillic для всього документа */
+            margin: 0; /* Збираємо всі відступи */
+            padding: 0; /* Збираємо всі відступи */
+        }
+        h1 {
+            font-family: 'Space Age';  /* Використання шрифту для заголовка */
+            font-size: 62px;
+            text-align: center; /* Центрує текст по горизонтально */
+            margin-top: 50px; /* Добавляє відступ зверху */
+            color: #c00cb1; /* Колір текста */
+        }
+        p {
+            font-family: 'Titus_Cyrillic', serif, sans-serif;  /* Використання шрифту Titus Cyrillic для абзаців */
+            color: #adb904; /* Колір текста */
+            font-size: 30px; /* Розмір тексту */
+        }
+        .container {
+            width: 66%; /* 2/3 ширини сторінки */
+            margin: 0 auto; /* Вирівнюємо по центру */
+            padding: 20px; /* Додаємо внутрішній відступ для зручного читання */
+            background-color: rgba(255, 255, 255, 0.0); /* Прозорий фон */
+            border: 1px solid rgba(255, 255, 255, 0.0); /* Прозора рамка */
+        }
+        /* Стилі для фото */
+        .circle-image {
+            width: 200px; /* Ширина і висота зображення */
+            height: 200px;
+            border-radius: 50%; /* Робить зображення круглим */
+            object-fit: cover; /* Обрізає зображення, щоб воно заповнило коло */
+            position: absolute; /* Абсолютне позиціонування */
+            top: 10px; /* Відступ зверху */
+            left: 30px; /* Відступ зліва */
+        }
+    
