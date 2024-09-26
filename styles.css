@@ -1,5 +1,5 @@
 body {
-    background-image: url('/fon.jpg'); /* Укажите путь к изображению */
+    background-image: url('main/fon.jpg'); /* Укажите путь к изображению */
     background-size: cover; /* Заполнить весь экран */
     background-position: center;
             margin: 0;
