@@ -1,51 +1,83 @@
 body {
-    background-image: url("Fon/fon_2.jpg"); /* Укажите путь к изображению */
-    background-size: cover; /* Заполнить весь экран */
+    background-image: url('Fon/fon_2.jpg'); /* Укажіть шлях до зображення */
+    background-size: cover; /* Заповнити весь екран */
     background-position: center;
-            margin: 0;
-            height: 100vh; /* Высота на весь экран */
-      
+    margin: 0;
+    height: 100vh; /* Висота на весь екран */
+    overflow: hidden; /* Приховує прокрутку */
+    perspective: 400px; /* Додає перспективу для 3D-ефектів */
 }
-        @font-face {
-            font-family: 'Space Age';  /* Назва шрифту */
-            src: url('font/space_age.ttf') format('truetype');  /* Шлях до шрифту */
-        }
-        @font-face {
-            font-family: 'Titus_Cyrillic';  /* Назва шрифту */
-            src: url('Titus_Cyrillic.ttf') format('truetype');  /* Шлях до шрифту */
-        }
-        body {
-            font-family: 'Titus_Cyrillic', serif, sans-serif;  /* Використання шрифту Titus Cyrillic для всього документа */
-            margin: 0; /* Збираємо всі відступи */
-            padding: 0; /* Збираємо всі відступи */
-        }
-        h1 {
-            font-family: 'Space Age';  /* Використання шрифту для заголовка */
-            font-size: 62px;
-            text-align: center; /* Центрує текст по горизонтально */
-            margin-top: 50px; /* Добавляє відступ зверху */
-            color: #c00cb1; /* Колір текста */
-        }
-        p {
-            font-family: 'Titus_Cyrillic', serif, sans-serif;  /* Використання шрифту Titus Cyrillic для абзаців */
-            color: #adb904; /* Колір текста */
-            font-size: 30px; /* Розмір тексту */
-        }
-        .container {
-            width: 66%; /* 2/3 ширини сторінки */
-            margin: 0 auto; /* Вирівнюємо по центру */
-            padding: 20px; /* Додаємо внутрішній відступ для зручного читання */
-            background-color: rgba(255, 255, 255, 0.0); /* Прозорий фон */
-            border: 1px solid rgba(255, 255, 255, 0.0); /* Прозора рамка */
-        }
-        /* Стилі для фото */
-        .circle-image {
-            width: 200px; /* Ширина і висота зображення */
-            height: 200px;
-            border-radius: 50%; /* Робить зображення круглим */
-            object-fit: cover; /* Обрізає зображення, щоб воно заповнило коло */
-            position: absolute; /* Абсолютне позиціонування */
-            top: 10px; /* Відступ зверху */
-            left: 30px; /* Відступ зліва */
-        }
 
+@font-face {
+    font-family: 'Space Age'; /* Назва шрифту */
+    src: url('Fonts/space_age.ttf') format('truetype'); /* Шлях до шрифту */
+}
+
+@font-face {
+    font-family: 'ArtScript'; /* Назва шрифту */
+    src: url('Fonts/ArtScript.ttf') format('truetype'); /* Шлях до шрифту */
+}
+
+body {
+    font-family: 'ArtScript', serif, sans-serif; /* Використання шрифту для всього документа */
+    padding: 0; /* Збираємо всі відступи */
+}
+
+h1 {
+    font-family: 'Space Age'; /* Використання шрифту для заголовка */
+    font-size: 62px;
+    text-align: center; /* Центрує текст по горизонталі */
+    margin-top: 50px; /* Додає відступ зверху */
+    color: #2778ad; /* Колір тексту */
+}
+
+p {
+    font-size: 50px; /* Розмір тексту */
+    font-family: 'ArtScript', sans-serif;
+    color: #e6d59f;
+    text-align: justify;
+    position: absolute;
+    top: 50%; /* Залишаємо на 50% для центрування */
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(5deg); /* Центруємо текст по обом осям */
+    animation: crawl 10s linear forwards; /* Використовується 'forwards', щоб зупинити текст */
+}
+
+@keyframes crawl {
+    0% {
+        top: 100%; /* Починаємо анімацію знизу */
+        transform: translate(-50%, -50%) rotateX(5deg);
+    }
+    100% {
+        top: 50%; /* Зупиняється посередині сторінки */
+        transform: translate(-50%, -50%) rotateX(5deg);
+    }
+}
+
+
+/* Стилі для контейнера */
+.container {
+    width: 66%; /* 2/3 ширини сторінки */
+    margin: 0 auto; /* Вирівнюємо по центру */
+    padding: 20px; /* Додаємо внутрішній відступ для зручного читання */
+    background-color: rgba(255, 255, 255, 0.0); /* Прозорий фон */
+    border: 1px solid rgba(255, 255, 255, 0); /* Прозора рамка */
+}
+
+/* Стилі для фото */
+.circle-image {
+    width: 200px; /* Ширина і висота зображення */
+    height: 200px;
+    border-radius: 50%; /* Робить зображення круглим */
+    object-fit: cover; /* Обрізає зображення, щоб воно заповнило коло */
+    position: absolute; /* Абсолютне позиціонування */
+    top: 10px; /* Відступ зверху */
+    left: 30px; /* Відступ зліва */
+}
+
+.content {
+    width: 90vw; /* 90% від ширини вікна */
+    height: 70vh; /* 50% від висоти вікна */
+
+}
