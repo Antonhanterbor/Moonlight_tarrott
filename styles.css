@@ -19,7 +19,7 @@ body {
 }
 
 body {
-    font-family: 'Great Vibes', serif, sans-serif; /* Використання шрифту для всього документа */
+    font-family: 'ArtScript', serif, sans-serif; /* Використання шрифту для всього документа */
     padding: 0; /* Збираємо всі відступи */
 }
 
@@ -35,7 +35,12 @@ h2 {
     font-size: 50px;
     text-align: center; /* Центрує текст по горизонталі */
     margin-top: 0px; /* Додає відступ зверху */
+    text-align: center; /* Центрує текст по горизонталі */
     color: #e6d59f; /* Колір тексту */
+    top: 100%; /* Початкова позиція знизу */
+    /*width: 60%; /* Звужуємо ширину тексту до 60% */
+    /*left: 50%;
+    transform: translate(-50%, -50%) rotateX(5deg); /* Центруємо текст по обом осям */
 }
 p {
     font-size: 36px; /* Зменшуємо розмір тексту */
@@ -44,7 +49,7 @@ p {
     text-align: justify;
     position: absolute;
     top: 100%; /* Початкова позиція знизу */
-    width: 60%; /* Звужуємо ширину тексту до 70% */
+    width: 60%; /* Звужуємо ширину тексту до 60% */
     left: 50%;
     transform: translate(-50%, -50%) rotateX(5deg); /* Центруємо текст по обом осям */
     animation: crawl 10s linear forwards; /* Використовується 'forwards', щоб зупинити текст */
