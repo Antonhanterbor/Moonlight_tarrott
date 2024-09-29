@@ -1,99 +1,78 @@
+/* Загальні стилі для всіх екранів */
 body {
-    background-image: url('Fon/fon_2.jpg'); /* Укажіть шлях до зображення */
-    background-size: cover; /* Заповнити весь екран */
+    background-image: url('Fon/fon_2.jpg');
+    background-size: cover;
     background-position: center;
     margin: 0;
-    height: 100vh; /* Висота на весь екран */
-    overflow: hidden; /* Приховує прокрутку */
-    perspective: 400px; /* Додає перспективу для 3D-ефектів */
-}
-
-@font-face {
-    font-family: 'Space Age'; /* Назва шрифту */
-    src: url('Fonts/space_age.ttf') format('truetype'); /* Шлях до шрифту */
-}
-
-@font-face {
-    font-family: 'ArtScript'; /* Назва шрифту */
-    src: url('Fonts/ArtScript.ttf') format('truetype'); /* Шлях до шрифту */
-}
-
-body {
-    font-family: 'ArtScript', serif, sans-serif; /* Використання шрифту для всього документа */
-    padding: 0; /* Збираємо всі відступи */
+    height: 100vh;
+    overflow: hidden;
+    perspective: 400px;
+    font-family: 'ArtScript', serif, sans-serif;
 }
 
 h1 {
-    font-family: 'Space Age'; /* Використання шрифту для заголовка */
+    font-family: 'Space Age';
     font-size: 62px;
-    text-align: center; /* Центрує текст по горизонталі */
-    margin-top: 50px; /* Додає відступ зверху */
-    color: #2778ad; /* Колір тексту */
+    text-align: center;
+    margin-top: 50px;
+    color: #2778ad;
 }
+
 h2 {
-    font-family: 'Great Vibes'; /* Використання шрифту для заголовка */
+    font-family: 'Great Vibes';
     font-size: 50px;
-    text-align: center; /* Центрує текст по горизонталі */
-    margin-top: 0px; /* Додає відступ зверху */
-    text-align: center; /* Центрує текст по горизонталі */
-    color: #e6d59f; /* Колір тексту */
-    top: 100%; /* Початкова позиція знизу */
-    /*width: 60%; /* Звужуємо ширину тексту до 60% */
-    /*left: 50%;
-    transform: translate(-50%, -50%) rotateX(5deg); /* Центруємо текст по обом осям */
+    text-align: center;
+    margin-top: 20px; /* Відстань між заголовком та підзаголовком */
+    color: #e6d59f;
 }
+
+.circle-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute; /* Залиште або змініть на relative для кращого позиціонування */
+    top: 20px; /* Відстань зверху */
+    left: 30px; /* Відстань зліва */
+}
+
+.container {
+    width: 90%; /* Додаємо відстань з боків */
+    max-width: 800px; /* Обмежуємо максимальну ширину для великих екранів */
+    margin: 0 auto; /* Вирівнюємо по центру */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
 p {
-    font-size: 36px; /* Зменшуємо розмір тексту */
+    font-size: 20px; /* Зменшення шрифту для кращого вигляду */
     font-family: 'Great Vibes', sans-serif;
     color: #e6d59f;
     text-align: justify;
-    position: absolute;
-    top: 100%; /* Початкова позиція знизу */
-    width: 60%; /* Звужуємо ширину тексту до 60% */
-    left: 50%;
-    transform: translate(-50%, -50%) rotateX(5deg); /* Центруємо текст по обом осям */
-    animation: crawl 10s linear forwards; /* Використовується 'forwards', щоб зупинити текст */
-
+    margin: 20px 0; /* Відстань зверху і знизу */
 }
 
-@keyframes crawl {
-    0% {
-        top: 100%; /* Починаємо анімацію знизу */
-        transform: translate(-50%, -50%) rotateX(5deg);
-    }
-    100% {
-        top: 50%; /* Зупиняється посередині сторінки */
-        transform: translate(-50%, -50%) rotateX(5deg);
-    }
+.menu {
+    display: flex; /* Використовуємо флекс для вирівнювання меню */
+    justify-content: center; /* Центруємо меню по горизонталі */
+    margin-top: 20px; /* Відстань зверху */
 }
 
-
-/* Стилі для контейнера */
-.container {
-    width: 66%; /* 2/3 ширини сторінки */
-    margin: 0 auto; /* Вирівнюємо по центру */
-    padding: 20px; /* Додаємо внутрішній відступ для зручного читання */
-    background-color: rgba(255, 255, 255, 0.0); /* Прозорий фон */
-    border: 1px solid rgba(255, 255, 255, 0); /* Прозора рамка */
+.menu-list {
+    list-style: none; /* Прибираємо маркери */
+    padding: 0; /* Відсутність відступів */
 }
 
-/* Стилі для фото */
-.circle-image {
-    width: 200px; /* Ширина і висота зображення */
-    height: 200px;
-    border-radius: 50%; /* Робить зображення круглим */
-    object-fit: cover; /* Обрізає зображення, щоб воно заповнило коло */
-    position: absolute; /* Абсолютне позиціонування */
-    top: 0px; /* Відступ зверху */
-    left: 30px; /* Відступ зліва */
+.menu-list li {
+    margin: 0 10px; /* Відстань між пунктами меню */
 }
 
-.content {
-    width: 90vw; /* 90% від ширини вікна */
-    height: 70vh; /* 50% від висоти вікна */
-
+.menu-list a {
+    text-decoration: none; /* Прибираємо підкреслення */
+    color: #e6d59f; /* Колір тексту меню */
 }
-/* Стилі для мобільних пристроїв */
+
+/* Медіа-запити для адаптивності */
 @media (max-width: 768px) {
     h1 {
         font-size: 36px; /* Зменшення шрифту для мобільних */
@@ -112,20 +91,10 @@ p {
     .circle-image {
         width: 150px; /* Зменшення ширини фото для мобільних */
         height: 150px; /* Зменшення висоти фото для мобільних */
-        
-    }
-}
-/* Стилі для планшетів */
-@media (min-width: 769px) and (max-width: 1024px) {
-    h1 {
-        font-size: 48px; /* Зменшення шрифту для планшетів */
     }
 
-    h2 {
-        font-size: 36px; /* Зменшення шрифту для планшетів */
-    }
-
-    p {
-        font-size: 20px; /* Зменшення шрифту для планшетів */
+    .menu {
+        flex-direction: column; /* Вертикальне вирівнювання меню на мобільних */
+        align-items: center; /* Центруємо меню по вертикалі */
     }
 }
