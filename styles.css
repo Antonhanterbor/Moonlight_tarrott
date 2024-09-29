@@ -22,7 +22,7 @@ h2 {
     font-family: 'Great Vibes';
     font-size: 50px;
     text-align: center;
-    margin-top: 20px; /* Відстань між заголовком та підзаголовком */
+    margin-top: 90px; /* Відстань між заголовком та підзаголовком */
     color: #e6d59f;
 }
 
@@ -38,7 +38,7 @@ h2 {
 
 .container {
     width: 100%; /* Додаємо відстань з боків */
-    max-width: 768px; /* Обмежуємо максимальну ширину для великих екранів */
+    max-width: 800px; /* Обмежуємо максимальну ширину для великих екранів */
     margin: 0 auto; /* Вирівнюємо по центру */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.0);
@@ -96,6 +96,12 @@ p {
         left: 20px; /* Відстань зліва */
     }
 
+    .container {
+    width: 100%; /* Додаємо відстань з боків */
+    max-width: 768px; /* Обмежуємо максимальну ширину для великих екранів */
+    margin: 0 auto; /* Вирівнюємо по центру */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.0);
     .menu {
         flex-direction: column; /* Вертикальне вирівнювання меню на мобільних */
         align-items: center; /* Центруємо меню по вертикалі */
