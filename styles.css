@@ -19,7 +19,7 @@ body {
 }
 
 body {
-    font-family: 'ArtScript', serif, sans-serif; /* Використання шрифту для всього документа */
+    font-family: 'Great Vibes', serif, sans-serif; /* Використання шрифту для всього документа */
     padding: 0; /* Збираємо всі відступи */
 }
 
@@ -31,7 +31,7 @@ h1 {
     color: #2778ad; /* Колір тексту */
 }
 h2 {
-    font-family: 'ArtScript'; /* Використання шрифту для заголовка */
+    font-family: 'Great Vibes'; /* Використання шрифту для заголовка */
     font-size: 50px;
     text-align: center; /* Центрує текст по горизонталі */
     margin-top: 0px; /* Додає відступ зверху */
@@ -39,7 +39,7 @@ h2 {
 }
 p {
     font-size: 36px; /* Зменшуємо розмір тексту */
-    font-family: 'ArtScript', sans-serif;
+    font-family: 'Great Vibes', sans-serif;
     color: #e6d59f;
     text-align: justify;
     position: absolute;
