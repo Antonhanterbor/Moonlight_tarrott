@@ -45,7 +45,7 @@ h2 {
 }
 
 p {
-    font-size: 20px; /* Зменшення шрифту для кращого вигляду */
+    font-size: 30px; /* Зменшення шрифту для кращого вигляду */
     font-family: 'Great Vibes', sans-serif;
     color: #e6d59f;
     text-align: justify;
@@ -105,5 +105,25 @@ p {
     .menu {
         flex-direction: column; /* Вертикальне вирівнювання меню на мобільних */
         align-items: center; /* Центруємо меню по вертикалі */
+    }
+}
+}
+.crawl {
+    /*font-family: 'Arial', sans-serif;
+    /*color: #ffcc00; /* Колір тексту */
+    /*font-size: 9em; /* Розмір тексту */
+    position: absolute;
+    bottom: -100%; /* Виходить за межі екрану знизу */
+    left: 50%; /* Центрує текст по горизонталі */
+    transform: translateX(-50%); /* Центрує текст по горизонталі */
+    animation: crawl 4s linear forwards; /* Анімація для тексту */
+}
+
+@keyframes crawl {
+    0% {
+        bottom: -100%; /* Текст починає знизу */
+    }
+    100% {
+        bottom: 25%; /* Текст зупиняється в центрі сторінки */
     }
 }
