@@ -55,7 +55,7 @@ p {
 .menu {
     display: flex; /* Використовуємо флекс для вирівнювання меню */
     justify-content: center; /* Центруємо меню по горизонталі */
-    margin-top: 45px; /* Відстань зверху */
+    margin-top: 70px; /* Відстань зверху */
 }
 
 .menu-list {
