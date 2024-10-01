@@ -20,7 +20,7 @@ h1 {
 
 h2 {
     font-family: 'Great Vibes';
-    font-size: 10px;
+    font-size: 50px;
     text-align: center;
     margin-top: 90px; /* Відстань між заголовком та підзаголовком */
     color: #e6d59f;
@@ -84,7 +84,7 @@ p {
     }
 
     p {
-        margin-left: 50px; /* Відступ з лівого боку сторінки у 50 пікселів */
+        margin-left: 30px; /* Відступ з лівого боку сторінки у 50 пікселів */
         font-size: 18px; /* Зменшення шрифту для мобільних */
         width: 90%; /* Збільшення ширини тексту для мобільних */
         left: 5px;
@@ -104,6 +104,7 @@ p {
     margin: 0 auto; /* Вирівнюємо по центру */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.0);
+    }
     .menu {
         flex-direction: column; /* Вертикальне вирівнювання меню на мобільних */
         align-items: center; /* Центруємо меню по вертикалі */
@@ -118,8 +119,7 @@ p {
         transform: translateX(-50%); /* Центрує текст по горизонталі */
         animation: crawl 6s linear forwards; /* Анімація для тексту */
     }
-}
-}
+
 .crawl {
     /*font-family: 'Arial', sans-serif;
     /*color: #ffcc00; /* Колір тексту */
