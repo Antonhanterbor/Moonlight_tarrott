@@ -84,6 +84,7 @@ p {
     }
 
     p {
+        margin-left: 50px; /* Відступ з лівого боку сторінки у 50 пікселів */
         font-size: 18px; /* Зменшення шрифту для мобільних */
         width: 90%; /* Збільшення ширини тексту для мобільних */
         left: 5px;
@@ -106,6 +107,16 @@ p {
     .menu {
         flex-direction: column; /* Вертикальне вирівнювання меню на мобільних */
         align-items: center; /* Центруємо меню по вертикалі */
+    }
+    .crawl {
+        /*font-family: 'Arial', sans-serif;
+        /*color: #ffcc00; /* Колір тексту */
+        /*font-size: 9em; /* Розмір тексту */
+        position: absolute;
+        bottom: -100%; /* Виходить за межі екрану знизу */
+        left: 50%; /* Центрує текст по горизонталі */
+        transform: translateX(-50%); /* Центрує текст по горизонталі */
+        animation: crawl 6s linear forwards; /* Анімація для тексту */
     }
 }
 }
