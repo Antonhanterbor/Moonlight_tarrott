@@ -84,7 +84,7 @@ p {
     }
 
     p {
-        margin-left: 30px; /* Відступ з лівого боку сторінки у 50 пікселів */
+        margin-left: 50px; /* Відступ з лівого боку сторінки у 50 пікселів */
         font-size: 18px; /* Зменшення шрифту для мобільних */
         width: 90%; /* Збільшення ширини тексту для мобільних */
         left: 5px;
@@ -119,6 +119,7 @@ p {
         transform: translateX(-50%); /* Центрує текст по горизонталі */
         animation: crawl 6s linear forwards; /* Анімація для тексту */
     }
+}
 
 .crawl {
     /*font-family: 'Arial', sans-serif;
